@@ -1,0 +1,107 @@
+.company-text {
+    margin-top: 25px;
+    &__container {
+        padding: 35px 115px 40px 25px;
+        background: url("../img/company/company-bg.png") repeat-y;
+        position: relative;
+
+        @media(max-width:990px){
+            padding: 35px 75px 40px 25px;
+        }
+
+        @media(max-width:767px){
+            padding: 35px 45px 40px 25px;
+        }
+
+        @media(max-width:575px){
+            padding: 20px 20px 20px 25px;
+        }
+
+        &:after {
+            content: " ";
+            display: block;
+            width: 378px;
+            height: 439px;
+            position: absolute;
+            transform: translateY(30%);
+            bottom:0;
+            right:25px;
+            z-index: 5;
+            background: url('../img/company/bg-girl.png') no-repeat;
+
+            @media(max-width:990px){
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        color: #22b7ca;
+        text-transform: uppercase;
+        font-family: "unisan";
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        margin: 0 -50px;
+
+        @media(max-width:990px){
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        flex: 0 1 50%;
+        padding: 0 50px;
+
+        &:last-child{
+            @media(max-width:990px){
+                margin-top: 25px;
+            }
+        }
+    }
+
+    &__label {
+        font-size: 12px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        font-weight: 900;
+    }
+
+    &-list {
+    }
+    &-item {
+        display: inline-block;
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 20px;
+
+        & + & {
+            margin-top: 4px;
+        }
+
+        &:before {
+            content: " ";
+            display: inline-block;
+            background: url("../img/company/company-arrow.png") no-repeat;
+            padding-left: 30px;
+            width: 11px;
+            height: 11px;
+            margin-left: 7px;
+        }
+    }
+}
+
+.column-text {
+    &__item {
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 20px;
+        & + & {
+            margin-top: 20px;
+        }
+    }
+}

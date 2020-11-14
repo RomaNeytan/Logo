@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- Svg -->
+    <svg style="display:none;">
+        <symbol viewBox="0 0 24 24" id="login">
+            <g>
+                <path d="m15.5 12.5h-15c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h15c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+            </g>
+            <g>
+                <path
+                    d="m11.5 16.5c-.128 0-.256-.049-.354-.146-.195-.195-.195-.512 0-.707l3.647-3.647-3.646-3.646c-.195-.195-.195-.512 0-.707s.512-.195.707 0l4 4c.195.195.195.512 0 .707l-4 4c-.098.097-.226.146-.354.146z" />
+            </g>
+            <g>
+                <path
+                    d="m12 23c-4.655 0-8.823-2.947-10.372-7.333-.092-.261.045-.546.305-.638.261-.09.546.045.638.305 1.408 3.987 5.197 6.666 9.429 6.666 5.514 0 10-4.486 10-10s-4.486-10-10-10c-4.232 0-8.021 2.679-9.428 6.667-.092.26-.378.395-.638.305-.26-.092-.397-.377-.305-.638 1.548-4.387 5.716-7.334 10.371-7.334 6.065 0 11 4.935 11 11s-4.935 11-11 11z" />
+            </g>
+        </symbol>
+        <symbol id="registration" viewBox="0 0 898.711 898.711">
+            <g>
+                <path d="M391.363,335.511c37.299,0,67.5-30.199,67.5-67.5c0-37.3-30.2-67.5-67.5-67.5c-37.3,0-67.5,30.2-67.5,67.5
+                    C323.863,305.211,354.063,335.511,391.363,335.511z" />
+                <path d="M173.563,783.311v90.4c0,13.8,11.2,25,25,25h351.7c13.8,0,25-11.2,25-25v-88.1h98.2c39.3,0,71.399-32.101,71.399-71.4v-125
+                    l57.5-1.1c22.8-0.4,37.2-24.801,26.5-44.9l-62.8-118.4c-14-26.399-21.3-55.8-21.3-85.6l0,0l0,0c0-188.3-153.4-340.7-342.101-339.2
+                    c-188.099,1.5-338.299,154.601-336.399,342.7c0.6,54.2,13.9,105.4,37,150.6C149.363,583.211,173.563,682.511,173.563,783.311z
+                     M211.663,256.312c0-6.4,3.8-12.101,9.7-14.601l37-15.8c3.9-1.7,7-4.9,8.601-8.8c0.199-0.5,0.399-0.9,0.5-1.4
+                    c1.6-3.899,1.6-8.2,0-12.1l-15.2-36.9c-2.4-5.899-1.101-12.8,3.5-17.3l16.899-16.9c4.5-4.5,11.301-5.899,17.2-3.5l37.5,15.101
+                    c3.8,1.5,8.101,1.5,12,0c0.3-0.101,0.7-0.3,1-0.4c4-1.6,7.2-4.7,8.9-8.7l15.5-37.1c2.5-5.9,8.3-9.8,14.7-9.8h23.899
+                    c6.4,0,12.101,3.8,14.601,9.7l16,37.5c1.699,3.899,4.8,6.899,8.699,8.5c0.2,0.1,0.4,0.199,0.601,0.199c3.899,1.601,8.3,1.7,12.2,0
+                    l37.399-15.399c5.9-2.4,12.8-1.101,17.3,3.5l16.9,16.899c4.5,4.5,5.9,11.301,3.5,17.2l-15.2,38c-1.5,3.9-1.5,8.2,0.101,12
+                    c0,0.101,0.1,0.2,0.1,0.3c1.6,4,4.7,7.2,8.7,8.9l37.6,15.7c5.9,2.5,9.8,8.3,9.8,14.7v23.899c0,6.4-3.8,12.101-9.699,14.601
+                    l-37.801,16.1c-3.899,1.7-7,4.8-8.6,8.8l-0.2,0.5c-1.5,3.8-1.5,8.101,0.101,11.9l15.6,37.6c2.5,5.9,1.1,12.8-3.5,17.3l-16.9,16.9
+                    c-4.5,4.5-11.3,5.899-17.199,3.5l-38-15.2c-3.801-1.5-8.101-1.5-12,0.1c-0.2,0.101-0.5,0.2-0.7,0.301c-3.9,1.6-7,4.699-8.7,8.6
+                    l-15.4,37.5c-2.5,5.9-8.3,9.8-14.699,9.8h-23.9c-6.4,0-12.1-3.8-14.6-9.7l-15.9-37.199c-1.7-4-5-7.101-9-8.601
+                    c-0.3-0.1-0.7-0.3-1-0.399c-3.9-1.5-8.2-1.5-12,0l-37.1,15.3c-5.9,2.399-12.801,1.1-17.301-3.5l-16.899-16.9
+                    c-4.5-4.5-5.9-11.3-3.5-17.2l15-37.3c1.6-3.899,1.5-8.199-0.101-12.1c-0.199-0.5-0.399-0.9-0.6-1.4c-1.6-4-4.7-7.199-8.7-8.8
+                    l-36.8-15.3c-5.9-2.5-9.8-8.3-9.8-14.7v-23.899H211.663z" />
+            </g>
+        </symbol>
+        <symbol id="message" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
+                        C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
+                         M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
+                        L338.213,256L482,112.212V399.787z" />
+                </g>
+            </g>
+        </symbol>
+        <!-- Products -->
+        <symbol id="ArrowLeft" viewBox="0 0 492 492">
+            <g>
+                <path d="M464.344,207.418l0.768,0.168H135.888l103.496-103.724c5.068-5.064,7.848-11.924,7.848-19.124
+                c0-7.2-2.78-14.012-7.848-19.088L223.28,49.538c-5.064-5.064-11.812-7.864-19.008-7.864c-7.2,0-13.952,2.78-19.016,7.844
+                L7.844,226.914C2.76,231.998-0.02,238.77,0,245.974c-0.02,7.244,2.76,14.02,7.844,19.096l177.412,177.412
+                c5.064,5.06,11.812,7.844,19.016,7.844c7.196,0,13.944-2.788,19.008-7.844l16.104-16.112c5.068-5.056,7.848-11.808,7.848-19.008
+                c0-7.196-2.78-13.592-7.848-18.652L134.72,284.406h329.992c14.828,0,27.288-12.78,27.288-27.6v-22.788
+                C492,219.198,479.172,207.418,464.344,207.418z" />
+            </g>
+        </symbol>
+        <symbol id="ArrowRight" viewBox="0 0 492.004 492.004">
+            <g>
+                <path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+                c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+                v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+                c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+                l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z" />
+            </g>
+        </symbol>
+        <!-- Footer -->
+        <symbol id="Vk" viewBox="0 0 512.047 512.047">
+            <g>
+                <path
+                    d="m334.568 507.618c83.832-9.523 131.455-77.588 131.455-150.791 0-52.632-25.84-95.229-70.518-118.681 29.941-24.111 47.651-61.656 47.651-102.174 0-64.556-46.699-119.575-111.05-130.854-45.293-7.877-113.853-4.022-286.083-5.071v511.941c40.109.208 248.486.099 288.545-4.37zm-164.531-397.573c14.517.109 100.222-.508 117.466 1.523 22.998 2.886 34.189 15.366 34.189 38.159 0 28.989-20.977 37.632-38.628 39.785-16.663 2.083-86.313 1.393-113.027 1.523zm0 191.719c26.149.741 115.186-2.538 139.204 5.991 19.644 7.046 29.604 22.002 29.604 44.487 0 24.902-12.466 40.942-35.083 45.176l-.41.088c-18.359 3.934-99.933 2.182-133.315 2.607z" />
+            </g>
+        </symbol>
+        <symbol id="Facebook" viewBox="0 0 96.124 96.123">
+            <g>
+                <path
+                    d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+            </g>
+        </symbol>
+        <symbol id="Instagram" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z" />
+                <path
+                    d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z" />
+                <circle cx="18.406" cy="5.595" r="1.439" />
+            </g>
+        </symbol>
+        <symbol id="odnoklassniki" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                <path
+                    d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+            </g>
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        @@include('_header.html')
+        <main class="page">
+            <div class="page__container container">
+                <div class="page__inner">
+                    <!-- Left panel navigation -->
+                    <aside class="page__panel">
+                        <nav class="page__menu menu-page">
+                            <div class="menu-page__header">
+                                <h3 class="menu-page__title">Каталог товаров</h3>
+                                <div class="menu-page__burger">
+                                    <button class="menu-page-btn">
+                                        <span class="menu-page-btn__item">Menu</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="menu-page-list">
+                                <li class="menu-page-list__parent">
+                                    <a href="#" class="menu-page-list__link menu-page-list__link_long">Беговыедорожки</a>
+                                    <div class="menu-page-list__submenu menu-page-cart">
+                                        <div class="menu-page-cart__block">
+                                            <div class="menu-page-cart__header">
+                                                <ul class="menu-page-cart__menu">
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Всепогодный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Для помещений</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Профессиональный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Любительский</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Item tovar -->
+                                            <div class="page-tovar">
+                                                <div class="page-tovar__item">
+                                                    <div class="page-tovar__labels">
+                                                        <a href="#" class="page-tovar__label">Товар дня</a>
+                                                    </div>
+                                                    <div class="page-tovar-content">
+                                                        <a href="#" class="page-tovar-content__img">
+                                                            <img src="img/aside/tovar_1.png" alt="Домашний теннисный стол">
+                                                        </a>
+                                                        <a href="#" class="page-tovar-content__title">
+                                                            Домашний теннисный стол
+                                                            Donic Indoor Roller 800 Green
+                                                        </a>
+                                                        <div class="page-tovar-content__oldprice">64 990 &#8381;</div>
+                                                    </div>
+                                                    <div class="page-tovar-footer">
+                                                        <a href="#" class="page-tovar-footer__korzine">
+                                                            <img src="img/aside/korzine_page.png" alt="Korzine">
+                                                        </a>
+                                                        <div class="page-tovar-footer__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-page-list__parent">
+                                    <a href="#"
+                                        class="menu-page-list__link menu-page-list__link_long">Эллиптическиетренажеры</a>
+                                    <div class="menu-page-list__submenu menu-page-cart">
+                                        <div class="menu-page-cart__block">
+                                            <div class="menu-page-cart__header">
+                                                <ul class="menu-page-cart__menu">
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Всепогодный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Для помещений</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Профессиональный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Любительский</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Item tovar -->
+                                            <div class="page-tovar">
+                                                <div class="page-tovar__item">
+                                                    <div class="page-tovar__labels">
+
+                                                    </div>
+                                                    <div class="page-tovar-content">
+                                                        <a href="#" class="page-tovar-content__img">
+                                                            <img src="img/aside/tovar_1.png" alt="Домашний теннисный стол">
+                                                        </a>
+                                                        <a href="#" class="page-tovar-content__title">
+                                                            Домашний теннисный стол
+                                                            Donic Indoor Roller 800 Green
+                                                        </a>
+                                                        <div class="page-tovar-content__oldprice">64 990 &#8381;</div>
+                                                    </div>
+                                                    <div class="page-tovar-footer">
+                                                        <a href="#" class="page-tovar-footer__korzine">
+                                                            <img src="img/aside/korzine_page.png" alt="Korzine">
+                                                        </a>
+                                                        <div class="page-tovar-footer__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="menu-page-list__link">Велотренажеры</a></li>
+                                <li><a href="#" class="menu-page-list__link">Гребныетренажеры</a></li>
+                                <li><a href="#" class="menu-page-list__link">Вибромассажеры</a></li>
+                                <li class="menu-page-list__parent">
+                                    <a href="#" class="menu-page-list__link menu-page-list__link_long">Теннисные
+                                        столы</a>
+                                    <div class="menu-page-list__submenu menu-page-cart">
+                                        <div class="menu-page-cart__block">
+                                            <div class="menu-page-cart__header">
+                                                <ul class="menu-page-cart__menu">
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Всепогодный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Для помещений</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Профессиональный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Любительский</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Item tovar -->
+                                            <div class="page-tovar">
+                                                <div class="page-tovar__item">
+                                                    <div class="page-tovar__labels">
+                                                        <a href="#" class="page-tovar__label">Товар дня</a>
+                                                    </div>
+                                                    <div class="page-tovar-content">
+                                                        <a href="#" class="page-tovar-content__img">
+                                                            <img src="img/aside/tovar_1.png" alt="Домашний теннисный стол">
+                                                        </a>
+                                                        <a href="#" class="page-tovar-content__title">
+                                                            Домашний теннисный стол
+                                                            Donic Indoor Roller 800 Green
+                                                        </a>
+                                                        <div class="page-tovar-content__oldprice">64 990 &#8381;</div>
+                                                    </div>
+                                                    <div class="page-tovar-footer">
+                                                        <a href="#" class="page-tovar-footer__korzine">
+                                                            <img src="img/aside/korzine_page.png" alt="Korzine">
+                                                        </a>
+                                                        <div class="page-tovar-footer__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="menu-page-list__link">Баскетбол</a></li>
+                                <li class="menu-page-list__parent">
+                                    <a href="#"
+                                        class="menu-page-list__link menu-page-list__link_long">Массажныекресла</a>
+                                    <div class="menu-page-list__submenu menu-page-cart">
+                                        <div class="menu-page-cart__block">
+                                            <div class="menu-page-cart__header">
+                                                <ul class="menu-page-cart__menu">
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Всепогодный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Для помещений</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Профессиональный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Любительский</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Item tovar -->
+                                            <div class="page-tovar">
+                                                <div class="page-tovar__item">
+                                                    <div class="page-tovar__labels">
+
+                                                    </div>
+                                                    <div class="page-tovar-content">
+                                                        <a href="#" class="page-tovar-content__img">
+                                                            <img src="img/aside/tovar_1.png" alt="Домашний теннисный стол">
+                                                        </a>
+                                                        <a href="#" class="page-tovar-content__title">
+                                                            Домашний теннисный стол
+                                                            Donic Indoor Roller 800 Green
+                                                        </a>
+                                                        <div class="page-tovar-content__oldprice">64 990 &#8381;</div>
+                                                    </div>
+                                                    <div class="page-tovar-footer">
+                                                        <a href="#" class="page-tovar-footer__korzine">
+                                                            <img src="img/aside/korzine_page.png" alt="Korzine">
+                                                        </a>
+                                                        <div class="page-tovar-footer__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-page-list__parent">
+                                    <a href="#" class="menu-page-list__link menu-page-list__link_long">Массажные столы
+                                    </a>
+                                    <div class="menu-page-list__submenu menu-page-cart">
+                                        <div class="menu-page-cart__block">
+                                            <div class="menu-page-cart__header">
+                                                <ul class="menu-page-cart__menu">
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Всепогодный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Для помещений</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Профессиональный</a></li>
+                                                    <li class="menu-page-cart__item"><a href="#"
+                                                            class="menu-page-cart__link">Любительский</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- Item tovar -->
+                                            <div class="page-tovar">
+                                                <div class="page-tovar__item">
+                                                    <div class="page-tovar__labels">
+                                                        <a href="#" class="page-tovar__label">Товар дня</a>
+                                                    </div>
+                                                    <div class="page-tovar-content">
+                                                        <a href="#" class="page-tovar-content__img">
+                                                            <img src="img/aside/tovar_1.png" alt="Домашний теннисный стол">
+                                                        </a>
+                                                        <a href="#" class="page-tovar-content__title">
+                                                            Домашний теннисный стол
+                                                            Donic Indoor Roller 800 Green
+                                                        </a>
+                                                        <div class="page-tovar-content__oldprice">64 990 &#8381;</div>
+                                                    </div>
+                                                    <div class="page-tovar-footer">
+                                                        <a href="#" class="page-tovar-footer__korzine">
+                                                            <img src="img/aside/korzine_page.png" alt="Korzine">
+                                                        </a>
+                                                        <div class="page-tovar-footer__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="menu-page-list__link">Силовыетренажеры</a></li>
+                                <li><a href="#" class="menu-page-list__link">Батуты</a></li>
+                                <li><a href="#" class="menu-page-list__link">Детскиегородки</a></li>
+                                <li><a href="#" class="menu-page-list__link">Дачнаямебель</a></li>
+                                <li><a href="#" class="menu-page-list__link">Уличныеспортивные комплексы</a></li>
+                                <li><a href="#" class="menu-page-list__link menu-page-list__link_last">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="filter">
+                            <form action="#" method="POST" class="filter__form">
+                                <div class="filter__title">Фильтр товаров</div>
+                                <div class="filter__body body-filter">
+                                    <div class="body-filter__section section-filter">
+                                        <div class="section-filter__title">Цена (руб.):</div>
+                                        <div class="section-filter__inner">
+                                            <div class="price-filter">
+                                                <div id = "#price-filter__Slider" class="price-filter__slider"></div>
+                                                <div class="price-filter__values values-price-filter">
+                                                    <div class="values-price-filter__column">
+                                                        <div class="values-price-filter__label">от</div>
+                                                        <div class="values-price-filter__input">
+                                                            <input id = "price-start" type="text" class="input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="values-price-filter__column">
+                                                        <div class="values-price-filter__label">до</div>
+                                                        <div class="values-price-filter__input">
+                                                            <input id = "price-end" type="text" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter">
+                                        <div class="section-filter__title section-filter__title_second">Товары для сравнения</div>
+                                        <div class="section-filter__inner">
+                                            <div class="section-filter__item">
+                                                <a href="#" class="section-filter__label">NordicTrack C100</a>
+                                                <a href="#" class="section-filter__img">
+                                                    <svg class = "section-filter__iccon">
+                                                        <use xlink:href = "#cross"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="section-filter__item">
+                                                <a href="#" class="section-filter__label">Clear Fit Luxury LT.20</a>
+                                                <a href="#" class="section-filter__img">
+                                                    <svg class = "section-filter__iccon">
+                                                        <use xlink:href = "#cross"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="section-filter__item">
+                                                <a href="#" class="section-filter__label">Ammity ATM 720 TFT+</a>
+                                                <a href="#" class="section-filter__img">
+                                                    <svg class = "section-filter__iccon">
+                                                        <use xlink:href = "#cross"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="section-filter__footer footer-section">
+                                            <a href="#" class="footer-section__btn"><span>Сравнить</span></a>
+                                            <a href="#" class="footer-section__korzine"><img src="img/catalog/korzine.png" alt="Корзина"></a>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter section-filter_spoiler">
+                                        <div class="section-filter__title section-filter__title_spoiler">Производитель:</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Сlear-fit</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Diadora</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Hasttings</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Clear-fit Diadora<span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">C NordicTrack</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter section-filter_spoiler">
+                                        <div class="section-filter__title section-filter__title_second section-filter__title_spoiler">Мощность двигателя:</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">12</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">14</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">16</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">18<span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">20</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter section-filter_spoiler">
+                                        <div class="section-filter__title section-filter__title_spoiler">Размер бегового полотна:</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Сlear-fit</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Diadora</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Hasttings</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Clear-fit Diadora<span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">C NordicTrack</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter section-filter_spoiler">
+                                        <div class="section-filter__title section-filter__title_spoiler">Вес пользователя (макс.):</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Сlear-fit</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Diadora</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Hasttings</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Clear-fit Diadora<span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">C NordicTrack</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter section-filter_spoiler">
+                                        <div class="section-filter__title section-filter__title_spoiler">Скорость (макс.):</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Сlear-fit</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Diadora</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Hasttings</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Clear-fit Diadora<span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">C NordicTrack</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="body-filter__section section-filter">
+                                        <div class="section-filter__title">Угол наклона:</div>
+                                        <div class="section-filter__inner">
+                                            <ul class="section-filter-list">
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">нет регулировки</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">механическая</span>
+                                                    </label>
+                                                </li>
+                                                <li class="section-filter-list___item">
+                                                    <label class="checkbox section-filter-list__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">электронная</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Submit -->
+                                <div class="section-filter__footer filter-footer">
+                                    <div class="filter-footer__button">
+                                        <button type = "submit" class="filter-footer__btn">Подобрать</button>
+                                    </div>
+                                    <div class="filter-footer__reset">
+                                        <button type="reset" class="filter-footer__refresh">Сбросить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Aside content -->
+                        <div class="page__panel-content content-panel" data-da="page__content,990, last">
+                            <div class="content-panel__news">
+                                <a href="#" class="content-panel__title">Новости</a>
+                                <div class="content-panel__inner">
+                                    <div class="content-panel__item">
+                                        <a href="#" class="content-panel__label">Снижение цен на игровые площадки Jungle
+                                            Gym</a>
+                                        <div class="content-panel__row">
+                                            <div class="content-panel__date">12 <span>авг</span></div>
+                                            <div class="content-panel__text">
+                                                <p><span>Уважаемые покупатели!</span>Мы рады сообщить вам о снижении
+                                                    цены с 27 июля на детский игровой комплекс</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-panel__item">
+                                        <a href="#" class="content-panel__label">Поступление батутов Eclipse!</a>
+                                        <div class="content-panel__row">
+                                            <div class="content-panel__date">19 <span>авг</span></div>
+                                            <div class="content-panel__text">
+                                                <p><span>Уважаемые покупатели!</span>Мы рады сообщить вам о снижении
+                                                    цены с 27 июля на детский игровой комплекс</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reviews -->
+                            <div class="content-panel__reviews reviews-panel">
+                                <a href="#" class="reviews-panel__title">Отзывы</a>
+                                <div class="reviews-panel__row">
+                                    <a href="#" class="reviews-panel__item">
+                                        <div class="reviews-panel__header">
+                                            <div class="reviews-panel__name">Павел Никифоров</div>
+                                            <div class="reviews-panel__date">12.09.2015</div>
+                                        </div>
+                                        <div class="reviews-panel__text">
+                                            <p>
+                                                Ради экономии места в тренажерном
+                                                зале приобрел многофункциональный
+                                                силовой тренажер Life Gear. За такую
+                                                небольшую стоимость и с такими
+                                                возможностями, он просто не
+                                                заменим.
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="reviews-panel__item">
+                                        <div class="reviews-panel__header">
+                                            <div class="reviews-panel__name">Степан Николаевич</div>
+                                            <div class="reviews-panel__date">12.09.2015</div>
+                                        </div>
+                                        <div class="reviews-panel__text">
+                                            <p>
+                                                Спасибо за прекрасный совет,
+                                                велосипед всей семье понравился
+                                                и цену за него достойную запросили.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- Main content -->
+                    <div class="page__content">
+                        <div class="page__header" id="intro">
+                            <form action="#" method="POST" class="page__search search-page">
+                                <div class="search-page__search">
+                                    <button type="button" class="search-page__title"><span>Везде</span></button>
+                                    <div class="search-page__menu menu-search">
+                                        <div class="menu-search__column">
+                                            <ul class="menu-search__list">
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Беговыедорожки</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Эллиптические тренажеры</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Велотренажеры</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Гребные тренажеры</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Вибромассажеры</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-search__column">
+                                            <ul class="menu-search__list">
+                                                <li class="menu-search__item">
+                                                    <label class="menu-search__checkbox checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Теннисные столы</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Баскетбольные щиты и стойки</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Массажные кресла</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Массажные столы </span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox" class="checkbox__input">
+                                                        <span class="checkbox__text">Силовые тренажеры</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-search__column">
+                                            <ul class="menu-search__list">
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Батуты</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Детские городки</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Дачная мебель</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Уличные спортивные комплексы</span>
+                                                    </label>
+                                                </li>
+                                                <li class="menu-search__item">
+                                                    <label class="checkbox menu-search__checkbox">
+                                                        <input type="checkbox">
+                                                        <span class="checkbox__text">Аксессуары</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-page__input">
+                                    <input type="text" class="input">
+                                </div>
+                                <div class="search-page__btn">
+                                    <button class="btn" type="submit">
+                                        Найти
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page__breadcrumbs breadcrumbs">
+                            <ul class="breadcrumbs-list">
+                                <li class="breadcrumbs-list__item"><a href="index.html" class="breadcrumbs-list__link">Главная</a></li>
+                                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__link active">Продукт</span></li>
+                            </ul>
+                        </div>
+                        <!-- Product -->
+                        <div class="product">
+                            <h1 class="product__title">BH Fitness F1 G6414V<span>Беговая дорожка </span></h1>
+                            <div class="product__content">
+                                <div class="product__images images-product">
+                                    <div class="images-product__slider" id = "images-product__slider">
+                                        <div class="images-product__slide">
+                                            <div class="images-product__sale">-15%</div>
+                                            <div class="images-product__img">
+                                                <a href="#" class="images-product__iccon">
+                                                    <img src="img/product/slide.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="images-product__slide">
+                                            <div class="images-product__sale">-15%</div>
+                                            <div class="images-product__img">
+                                                <a href="#" class="images-product__iccon">
+                                                    <img src="img/product/slide.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="images-product__slide">
+                                            <div class="images-product__sale">-15%</div>
+                                            <div class="images-product__img">
+                                                <a href="#" class="images-product__iccon">
+                                                    <img src="img/product/slide.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="images-product__subslider gallery-subslider">
+                                        <div class="gallery-subslider__row" id = "images-subslider">
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/1.png" alt=""></a>
+                                            </div>
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/2.png" alt=""></a>
+                                            </div>
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/4.png" alt=""></a>
+                                            </div>
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/2.png" alt=""></a>
+                                            </div>
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/2.png" alt=""></a>
+                                            </div>
+                                            <div class="gallery-subslider__column">
+                                                <a href="#" class="gallery-subslider__item"><img src="img/product/2.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__inner inner-product">
+                                    <div class="inner-product__header">
+                                        <div class="inner-product__btn">
+                                            <a href="#"><span>Сравнить</span></a>
+                                        </div>
+                                        <div class="inner-product__stock">в наличии</div>
+                                    </div>
+                                    <div class="inner-product__main main-product">
+                                        <div class="main-product__column">
+                                            <div class="main-product__oldprice">64 990 &#8381;</div>
+                                            <div class="main-product__price">64 990 &#8381;</div>
+                                        </div>
+                                        <div class="main-product__column">
+                                            <div class="main-product__quantity quantity">
+                                                <button class="quantity__button quantity__button_minus"></button>
+                                                <div class="quantity__input">
+                                                    <input type="text" value = "1">
+                                                </div>
+                                                <button class="quantity__button quantity__button_plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="main-product__column">
+                                            <div class="main-product__korzine">
+                                                <a href="checkout.html" class="main-product__btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner-product__footer footer-product">
+                                        <div class="footer-product__title">В стоимость товара включено:</div>
+                                        <div class="footer-product__row">
+                                            <div class="footer-product__column">
+                                                <a href="#" class="footer-product__iccon">
+                                                    <img src="img/product/col1.png" alt="">
+                                                </a>
+                                                <div class="footer-product__suptitle">Бесплатная сборка</div>
+                                            </div>
+                                            <div class="footer-product__column">
+                                                <a href="#" class="footer-product__iccon">
+                                                    <img src="img/product/col2.png" alt="">
+                                                </a>
+                                                <div class="footer-product__suptitle">Быстрая доставка</div>
+                                            </div>
+                                            <div class="footer-product__column">
+                                                <a href="#" class="footer-product__iccon">
+                                                    <img src="img/product/3.png" alt="">
+                                                </a>
+                                                <div class="footer-product__suptitle">Гарантия</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product footer -->
+                            <div class="product__footer footer-product">
+                                <div class="footer-product__tabs tabs-product">
+                                    <nav class="tabs-product__menu">
+                                        <a href="#" class="tabs-product__item active"><span>Описание</span></a>
+                                        <a href="#" class="tabs-product__item"><span>Характеристики</span></a>
+                                    </nav>
+                                    <div class="tabs-product__body">
+                                        <div class="tabs-product__block">
+                                            <p class = "tabs-product__text"> Начав с производства качественных деревянных лыж, во второй половине 90-х Nordic Track расширил производство, 
+                                                верно угадав тренд развития спортивного оборудования. С этого момента беговые дорожки Nordic Track стали 
+                                                настоящим фетишем как для серьезных спортсменов, так и для любителей фитнеса. Готовитесь ли вы к восхождению 
+                                                на горный пик, к сплаву по бурной реке, или просто решили влезть в прошлогодний купальник к наступающему лету – 
+                                                Nordic Track поможет достойно решить задачу подготовки к этим свершениям.
+                                            </p>
+                                            <p class = "tabs-product__text">
+                                                Гарантия Nordic Track достойна их качества – 24 месяца с даты покупки.
+                                            </p>
+                                            <p class = "tabs-product__text"> Недостатки<br>
+                                                В линейке производителя отсутствуют модели бюджетного уровня. Кредо производителя – не гнаться за дешевизной, а 
+                                                предлагать действительно качественный и функциональный товар.
+                                            </p>
+                                            <p class = "tabs-product__text">
+                                                Рекомендации<br>
+                                                Мощные топ-модели лучше устанавливать на специальный шумо-виброзащитный коврик, особенно если живете не на 
+                                                первом этаже.
+                                                Популярные модели<br>
+                                                Nordic Track T15<br>
+                                                Nordic Track Inline Trainer x7i
+                                            </p>
+                                        </div>
+                                        <div class="tabs-product__block">
+                                            <p class = "tabs-product__text">
+                                                Гарантия Nordic Track достойна их качества – 24 месяца с даты покупки.
+                                            </p>
+                                            <p class = "tabs-product__text"> Недостатки<br>
+                                                В линейке производителя отсутствуют модели бюджетного уровня. Кредо производителя – не гнаться за дешевизной, а 
+                                                предлагать действительно качественный и функциональный товар.
+                                            </p>
+                                            <p class = "tabs-product__text">
+                                                Рекомендации<br>
+                                                Мощные топ-модели лучше устанавливать на специальный шумо-виброзащитный коврик, особенно если живете не на 
+                                                первом этаже.
+                                                Популярные модели<br>
+                                                Nordic Track T15<br>
+                                                Nordic Track Inline Trainer x7i
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Other product -->
+                            <div class="product__other other-product">
+                                <div class="other-product__title">Похожие товары</div>
+                                <div class="other-product__inner">
+                                    <div class="products-page__slide other-product__slide">
+                                        <div class="products-page__column">
+                                            <div class="products-page__item item-products">
+                                                <a href="#" class="item-products__img"><img src="img/products/item2.png" alt=""></a>
+                                                <div class="item-products__text">
+                                                    <a href = "#" class="item-products__name">BH Fitness F1 G6414V <span class="item-products__description">Беговая дорожка</span></a>
+                                                    <div class="item-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="item-products__footer">
+                                                        <a href = "#" class="item-products__korzine"><img src="img/products/korzine_page.png" alt=""></a>
+                                                        <div class="item-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                                <!-- Hover -->
+                                                <div class="item-products__content content-products">
+                                                    <a href = "#" class="content-products__name">BH Fitness F1 G6414V <span class="content-products__description">Беговая дорожка</span></a>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Тип беговой дорожки: <span>Электрическая</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Скорость движения (км/ч):<span>22</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Складывание:<span>Есть</span></div>
+                                                    </div>
+                                                    <a href = "product.html" class="content-products__korzine"></a>
+                                                    <div class="content-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="content-products__footer">
+                                                        <div class="content-products__label">в наличии</div>
+                                                        <div class="content-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products-page__column">
+                                            <div class="products-page__item item-products">
+                                                <a href="#" class="item-products__img"><img src="img/products/item2.png" alt=""></a>
+                                                <div class="item-products__text">
+                                                    <a href = "#" class="item-products__name">BH Fitness F1 G6414V <span class="item-products__description">Беговая дорожка</span></a>
+                                                    <div class="item-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="item-products__footer">
+                                                        <a href = "#" class="item-products__korzine"><img src="img/products/korzine_page.png" alt=""></a>
+                                                        <div class="item-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                                <!-- Hover -->
+                                                <div class="item-products__content content-products">
+                                                    <a href = "#" class="content-products__name">BH Fitness F1 G6414V <span class="content-products__description">Беговая дорожка</span></a>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Тип беговой дорожки: <span>Электрическая</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Скорость движения (км/ч):<span>22</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Складывание:<span>Есть</span></div>
+                                                    </div>
+                                                    <a href = "product.html" class="content-products__korzine"></a>
+                                                    <div class="content-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="content-products__footer">
+                                                        <div class="content-products__label">в наличии</div>
+                                                        <div class="content-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products-page__column">
+                                            <div class="products-page__item item-products">
+                                                <a href="#" class="item-products__img"><img src="img/products/item2.png" alt=""></a>
+                                                <div class="item-products__text">
+                                                    <a href = "#" class="item-products__name">BH Fitness F1 G6414V <span class="item-products__description">Беговая дорожка</span></a>
+                                                    <div class="item-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="item-products__footer">
+                                                        <a href = "#" class="item-products__korzine"><img src="img/products/korzine_page.png" alt=""></a>
+                                                        <div class="item-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                                <!-- Hover -->
+                                                <div class="item-products__content content-products">
+                                                    <a href = "#" class="content-products__name">BH Fitness F1 G6414V <span class="content-products__description">Беговая дорожка</span></a>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Тип беговой дорожки: <span>Электрическая</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Скорость движения (км/ч):<span>22</span></div>
+                                                    </div>
+                                                    <div class="content-products__item">
+                                                        <div class="content-products__type">Складывание:<span>Есть</span></div>
+                                                    </div>
+                                                    <a href = "product.html" class="content-products__korzine"></a>
+                                                    <div class="content-products__oldprice">79 800 &#8381;</div>
+                                                    <div class="content-products__footer">
+                                                        <div class="content-products__label">в наличии</div>
+                                                        <div class="content-products__price">64 990 &#8381;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Info -->
+            <div class="page__info info-page" id="info">
+                <div class="info-page__container container">
+                    <div class="info-page__inner">
+                        <div class="info-page__line line-info">
+                            <div class="line-info__label">Информация:</div>
+                            <ul class="line-info__list">
+                                <li class="line-info__item"><a href="#" class="line-info__link">Бренды</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Доставка</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Распродажа</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Контакты</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Отзывы</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-page__line">
+                            <div class="line-info__label">Помощь:</div>
+                            <ul class="line-info__list">
+                                <li class="line-info__item"><a href="#" class="line-info__link">Как заказать</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Доставка</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link"> Оплата</a></li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Гарантия и сборка</a>
+                                </li>
+                                <li class="line-info__item"><a href="#" class="line-info__link">Возврат</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('_footer.html')
+    </div>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

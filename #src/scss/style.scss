@@ -1,0 +1,99 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "fonts.scss";
+@import "vars.scss";
+@import "burger.scss";
+@import "container.scss";
+@import "ibg.scss";
+@import "slick.scss";
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/aside.scss";
+@import "blocks/search.scss";
+@import "blocks/mainslider.scss";
+@import "blocks/news.scss";
+@import "blocks/reviews.scss";
+@import "blocks/products.scss";
+@import "blocks/brands.scss";
+@import "blocks/company.scss";
+@import "blocks/info.scss";
+@import "blocks/footer.scss";
+
+// Catalog
+@import "catalog.scss";
+// Product
+@import "product.scss";
+// Checkout
+@import "checkout.scss";
+
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page{
+    flex:1 1 auto;
+
+    @media(max-width:1060px){
+        padding-top: 100px;
+    }
+
+    &__content{
+        flex:1 1 auto;
+        min-width: 0;
+        
+        @media(min-width:991px){
+            padding: 0 0 0 30px;
+        }
+    }
+    &__inner{
+        display: flex;
+
+        @media(max-width:990px){
+            flex-direction: column;
+        }
+    }
+}
+
+body {
+    font-family: 'Roboto';
+    color:$main-color;
+    font-size: 15px;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0 0 4px;
+}
+

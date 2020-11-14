@@ -1,0 +1,115 @@
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+/* Слайд */
+.slick-slide {
+    &:focus {
+        outline: none;
+    }
+}
+
+.main-slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.main-slider .slick-dots li {
+    margin-left: 45px;
+
+    @media(max-width:575px){
+        margin-left: 25px;
+    }
+}
+/* Элемент точки */
+.main-slider .slick-dots button {
+    font-size: 0;
+    width: 55px;
+    height: 55px;
+    background: url("../img/main-slider/slider-item4.png") no-repeat;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.main-slider .slick-dots button#slick-slide-control01 {
+    background: url("../img/main-slider/slider-item2.png") no-repeat;
+}
+
+.main-slider .slick-dots button#slick-slide-control02 {
+    background: url("../img/main-slider/slider-item3.png") no-repeat;
+}
+
+.main-slider .slick-dots button#slick-slide-control03 {
+    @media(max-width:450px){
+        display: none;
+    }
+    background: url("../img/main-slider/slider-item4.png") no-repeat;
+}
+
+.main-slider .slick-dots button#slick-slide-control04 {
+    @media(max-width:575px){
+        display: none;
+    }
+    background: url("../img/main-slider/slider-item5.png") no-repeat;
+}
+
+/* Активная точка */
+.main-slider .slick-dots li.slick-active button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #fff;
+    background: #f68038 !important;
+    &:after {
+        content: "1";
+        display: block;
+        font-size: 16px;
+        color:$main-color;
+        font-family: 'Play';
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+.main-slider .slick-dots li.slick-active button#slick-slide-control01 {
+    &:after {
+        content: "2";
+    }
+}
+
+.main-slider .slick-dots li.slick-active button#slick-slide-control02 {
+    &:after {
+        content: "3";
+    }
+}
+
+.main-slider .slick-dots li.slick-active button#slick-slide-control03 {
+    &:after {
+        content: "4";
+    }
+}
+
+.main-slider .slick-dots li.slick-active button#slick-slide-control04 {
+    &:after {
+        content: "5";
+    }
+}
+
+// Brands slider
+
+.brands-slider .slick-track{
+    display:flex;
+    align-items:center;
+}
+

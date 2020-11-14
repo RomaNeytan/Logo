@@ -1,0 +1,59 @@
+.brands-slider {
+    margin-top: 30px;
+    padding: 25px 0;
+    border-top: 3px dashed #dadada;
+    border-bottom: 3px dashed #dadada;
+
+    &__container {
+        position: relative;
+    }
+
+    &__row {
+        padding: 0 75px 0 100px;
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 0 -15px;
+    }
+
+    &__column {
+        padding: 0 15px;
+        @media(max-width:569px){
+            margin: 0 auto;
+        }
+
+        img{
+            max-width:100%;
+        }
+    }
+
+    &__iccon{
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &_left {
+            left: 25px;
+        }
+
+        &_right {
+            right: 25px;
+        }
+    }
+
+    &__arrow-iccon {
+        width: 30px;
+        height: 30px;
+        fill: #fd8b30;
+        transition: all 0.8s ease 0s;
+
+        &:hover {
+            fill: #009cb0;
+        }
+    }
+}
